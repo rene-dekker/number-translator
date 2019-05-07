@@ -21,6 +21,10 @@ NumberTranslationService service = new NumberTranslationServiceImpl();
 service .translate(123L);  // Capitalizes by default.
 service .translate(123L, false); // Does not capitalize.
 ```
+
+#### Integers/longs only
+This software does not support decimal numbers.
+
 #### Jacoco
 Jacoco was added to check for test coverage. When you run `mvn test`, a report is added to /target/site/jacoco/index.html.
 

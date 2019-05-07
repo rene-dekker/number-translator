@@ -16,7 +16,7 @@ public class Main {
 
     System.out.println("This is the number translator. We will prompt you for numeric values between\n" +
         "[-9,223,372,036,854,775,808, ..., 9,223,372,036,854,775,807] and print the\nfully written outversion " +
-        "onto the screen. \n");
+        "onto the screen. Decimal numbers are not supported. \n");
 
     Scanner scanner = new Scanner(System.in);
     while (true) {
