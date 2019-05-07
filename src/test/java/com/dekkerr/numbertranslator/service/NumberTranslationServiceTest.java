@@ -32,6 +32,11 @@ public class NumberTranslationServiceTest {
   }
 
   @Test
+  public void translate_MinLongValue_no_caps() {
+    assertThat(this.service.translate(Long.MIN_VALUE, false)).isEqualTo("minus nine quintillion two hundred and twenty three quadrillion three hundred and seventy two trillion thirty six billion eight hundred and fifty four million seven hundred and seventy five thousand eight hundred and eight");
+  }
+
+  @Test
   public void translate_MinLongValuePlus1() {
     long testValue = Long.MIN_VALUE + 1;
     assertThat(this.service.translate(testValue)).isEqualTo("Minus nine quintillion two hundred and twenty three quadrillion three hundred and seventy two trillion thirty six billion eight hundred and fifty four million seven hundred and seventy five thousand eight hundred and seven");
